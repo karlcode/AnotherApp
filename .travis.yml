@@ -2,3 +2,17 @@ language: node_js
 notifications:
   email:
     - karl.l1@hotmail.com
+
+os:
+  - linux
+  - osx
+
+node_js:
+  - "node"
+  - "lts/*"
+  - "7"
+  - "8"
+
+script:
+  - npm install
+  - npm run lint
